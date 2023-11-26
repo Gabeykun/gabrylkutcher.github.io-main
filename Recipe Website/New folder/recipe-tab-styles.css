@@ -1,0 +1,113 @@
+body{
+    background-color: #97E8CA;
+}
+
+#nav {
+    display: block;
+    border: solid;
+    color: white;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+#nav a{
+    color: black;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.links {
+    margin: 15px 0px 15px 0px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.links a{   
+    padding: 5px 15px; 
+}
+
+.waffle {
+    background-image: url(https://images.pexels.com/photos/789327/pexels-photo-789327.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-size: cover;
+}
+
+.omlet {
+    background-image: url(https://www.eatthis.com/wp-content/uploads/sites/4/2020/01/how-to-make-an-omelet-6.jpg?quality=82&strip=1&w=640);
+    background-size: cover;
+}
+
+.pasta {
+    background-image: url(https://www.everydayfamilycooking.com/wp-content/uploads/2019/08/summer-pasta-salad-feature-image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sandwich {
+    background-image: url(https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_596,h_335/v1/img/recipes/24/39/65/picIDMFir.jpg);
+    background-size: cover;
+}
+
+.ramen {
+    background-image: url(https://img.buzzfeed.com/thumbnailer-prod-us-east-1/b11bef7b1dd54d55a13b44eda861a3d1/TastyFacebook1080x1080.jpg?output-format=auto&output-quality=auto&resize=600:*);
+    background-size: cover;
+    background-position: center;
+}
+
+.spaghetti {
+    background-image: url(https://hips.hearstapps.com/del.h-cdn.co/assets/17/39/1600x2399/gallery-1506456122-delish-spaghetti-meatballs-2.jpg?resize=768:*);
+    background-size: cover;
+    background-position: center;
+}
+
+.bar {
+    background-image: url(https://buildyourbite.com/wp-content/uploads/2018/09/Blank-700-x-1450-1.jpg);
+    background-size: cover;
+}
+
+.cookie {
+    background-image: url(https://www.ihearteating.com/wp-content/uploads/2016/08/Easiest-Chocolate-Chip-Cookies-800-2.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.wrapper {
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.img {
+    display: grid;
+    place-items: center;
+    grid-gap: 0.5rem;
+    padding: 25px 0px 0px 25px;
+}
+
+.img a{
+    border: solid;
+    width: 12rem;
+    height: 10rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header-img {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp3pmEYhJq3rnFI6s3l5vXo-EXCo6rJ-4v2A&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 1em;
+    height: 8rem;
+    border: solid;
+}

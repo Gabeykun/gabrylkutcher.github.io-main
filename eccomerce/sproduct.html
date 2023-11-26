@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <title>Electic brush
+    </title>
+</head>
+<body>
+
+    <!--- Header Section-->
+    <section id="header">
+        <div class="logo-container">
+            <img src="img/logo.jpg" alt="rock logo">
+        </div>
+        <ul id="nav">
+            <li ><a href="index.html">Home</a></li>
+            <li><a class="page" href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html" id='nav-bag' class="cart"><i class="fa-solid fa-bag-shopping"></i><span class=""></span></a></li> 
+            <a href="#" id="close" class="fas fa-times"></a>
+        </ul>
+        <div class="mobile">
+            <a href="cart.html" class="cart"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+
+    <section id="pro-details">
+        <div class="single-img">
+            <img id="main-img" src="img/product-7.webp"  alt="Hang Bar">
+            <div class="suggested-img">
+                <div class="suggested-group">
+                    <img src="img/product1.webp"  alt="Hang Bar" onclick="changeImage(this)">
+                </div>
+                <div class="suggested-group">
+                    <img src="img/product2.webp"  alt="Grip strengthener" onclick="changeImage(this)">
+                </div>
+                <div class="suggested-group">
+                    <img src="img/product3.webp"  alt="Climbing Rope" onclick="changeImage(this)">
+                </div>
+                <div class="suggested-group">
+                    <img src="img/product4.webp"  alt="Harness Gear" onclick="changeImage(this)">
+                </div>
+            </div>
+        </div>
+        <div class="prod-desc">   
+            <h3>Home / Accessories</h3>
+            <h4>Profesional Rock Climbing Shoes</h4>
+            <h2>$24.99</h2>
+            <input type="number" placeholder="1" value="1">
+            <button>Add To Cart</button>
+            <h4>Product Details</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, quasi architecto. Neque at porro suscipit ad enim sint voluptas nobis dolorem, id esse incidunt voluptatibus illo deleniti vero sit laudantium.
+            Molestias doloremque perferendis odit, voluptate, debitis maxime illo optio sequi sit, dolorem ipsum aut mollitia repellendus dolor obcaecati explicabo fugiat totam dolores hic non quis earum dignissimos cum? Minus, dolorum.</p>
+        </div>
+
+
+    
+    </section>
+
+        <!-- Products -->
+        <section id="product-1" class="sp-feature">
+            <h2>Featured Products</h1>
+            <p>Popular products other users like!</p>
+            <div class="prod-box">
+                <div class="prod-container">
+                    <img src="img/product-5.webp" alt="Grip Strengthener">
+                    <div class="product-details">
+                        <span>Cliffer</span>
+                        <h5 class="prod-desc">Performance Enchancing Grip Strengthener</h5>
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        <h4>$12</p>
+                    </div>
+                    <a href=""><i class="fa-solid fa-cart-shopping cart"></i></i></a>
+                </div>
+                <div class="prod-container">
+                    <img src="img/product-6.webp" alt="Grip Strengthener">
+                    <div class="product-details">
+                        <span>Cliffer</span>
+                        <h5 class="prod-desc">Performance Enchancing Grip Strengthener</h5>
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        <h4>$12</p>
+                    </div>
+                    <a href=""><i class="fa-solid fa-cart-shopping cart"></i></i></a>
+                </div>
+                <div class="prod-container">
+                    <img src="img/product-7.webp" alt="Grip Strengthener">
+                    <div class="product-details">
+                        <span>Cliffer</span>
+                        <h5 class="prod-desc">Performance Enchancing Grip Strengthener</h5>
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        <h4>$12</p>
+                    </div>
+                    <a href=""><i class="fa-solid fa-cart-shopping cart"></i></i></a>
+                </div>
+                <div class="prod-container">
+                    <img src="img/product-8.webp" alt="Grip Strengthener">
+                    <div class="product-details">
+                        <span>Cliffer</span>
+                        <h5 class="prod-desc">Performance Enchancing Grip Strengthener</h5>
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        <h4>$12</p>
+                    </div>
+                    <a href=""><i class="fa-solid fa-cart-shopping cart"></i></i></a>
+                </div>
+            </div>
+         
+        </section>
+    
+    <!--- News Letter-->
+    <section id="news">
+        <div class="news-box">
+            <h4>Sign Up For Newsletters</h2>
+            <h3>Get E-mail updates about our latest shop and <span>special offers.</span></h4> 
+        </div>
+        <form action="">
+            <input type="text" placeholder="Your email address">
+            <button>Sign up</button>
+        </form>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="contact foot">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 14425 Gertha Ave, Orlando Florida</p>
+            <p><strong>Phone:</strong> (407) 963-9183</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00. Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="fol-icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+
+            </div>
+        </div>
+        <div class="about foot">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="account foot">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="app foot">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="download">
+                <a href="#"><img src="img/apple.jpg" alt="Apple App Download Link"></a>
+                <a href="#"><img src="img/google.jpg" alt="Google App Download Link"></a>
+            </div>
+            <p>Secured Payment GateWay</p>
+            <img class="sc-pay" src="img/pay.png" alt="Secured Payment Method">
+        </div>
+    </footer>
+    <div class="copywrite">
+        <p>@ 2021, Cliffer etc - Rock Climbing Eccomerce Website Template</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Four</title>
+    <link rel="stylesheet" href="connect-four.css">
+    <script src="connect-four.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+    $(function(){
+        const displayCurrentPlayer = document.querySelector('#current-player')
+        const squares = document.querySelectorAll('.grid div')
+        const tiles = document.querySelectorAll('.container div')
+        $(document).ready(function(){
+            $(".column1").on('mouseenter mouseleave', function(e) {
+                if (e.type == 'mouseenter') {
+                    for (let i = 7; i < squares.length - 7; i++){
+                        if (displayCurrentPlayer.innerHTML == 'Player 1'){
+                            if (i % 7 == 2 && !squares[i].classList.contains('taken')){
+                                squares[i].classList.add('x')
+                                tiles[0].classList.add('x')
+                            }
+
+                        } else {
+                            if (i % 7 == 2  && !squares[i].classList.contains('taken')){
+                                squares[i].classList.add('b')
+                                tiles[0].classList.add('b')
+                            }
+                        }
+                    }
+
+                } else {
+                    for (let i = 7; i < squares.length - 7; i++){
+                        if (i % 7 == 2){
+                            squares[i].classList.remove('x')
+                            squares[i].classList.remove('b')
+                            tiles[0].classList.remove('x')
+                            tiles[0].classList.remove('b')
+                        }
+                    }
+                }    
+                  
+            })
+            $(".column2").on('mouseenter mouseleave', function(e) {
+                if (e.type == 'mouseenter') {
+                    for (let i = 7; i < squares.length - 7; i++){
+                        if (displayCurrentPlayer.innerHTML == 'Player 1'){
+                            if (i % 7 == 3  && !squares[i].classList.contains('taken')){
+                                squares[i].classList.add('x')
+                                tiles[1].classList.add('x')
+                            } 
+                        } else {
+                            if (i % 7 == 3  && !squares[i].classList.contains('taken')){
+                                squares[i].classList.add('b')
+                                tiles[1].classList.add('b')
+
+                            }
+                        }
+                    }
+                } else {
+                    for (let i = 7; i < squares.length - 7; i++){
+                        if (i % 7 == 3){
+                            squares[i].classList.remove('x')
+                            squares[i].classList.remove('b')
+                            tiles[1].classList.remove('x')
+                            tiles[1].classList.remove('b')
+                        }
+                    }
+                }    
+                  
+            })
+            $(".column3").on('mouseenter mouseleave', function(e) {
+                if (e.type == 'mouseenter') {
+                    for (let i = 7; i < squares.length - 7; i++){
+                        if (displayCurrentPlayer.innerHTML == 'Player 1'){
+                            if (i % 7 == 4  && !squares[i].classList.contains('taken')){
+                                squares[i].classList.add('x')
+                                tiles[2].classList.add('x')
+                            } 
+                        } else {
+                            if (i % 7 == 4  && !squares[i].classList.contains('taken')){
+                                squares[i].classList.add('b')
+                                tiles[2].classList.add('b')
+                            }
+                        }
+                    }
+                } else {
+                    for (let i = 7; i < squares.length - 7; i++){
+                        if (i % 7 == 4){
+                            squares[i].classList.remove('x')
+                            squares[i].classList.remove('b')
+                            tiles[2].classList.remove('x')
+                            tiles[2].classList.remove('b')
+                        }
+                    }
+                }    
+                  
+            })
+            $(".column4").on('mouseenter mouseleave', function(e) {
+                if (e.type == 'mouseenter') {
+                    for (let i = 7; i < squares.length - 7; i++){
+                        if (displayCurrentPlayer.innerHTML == 'Player 1'){
+                            if (i % 7 == 5  && !squares[i].classList.contains('taken')){
+                                squares[i].classList.add('x')
+                                tiles[3].classList.add('x')
+                            } 
+                        } else {
+                            if (i % 7 == 5  && !squares[i].classList.contains('taken')){
+                                squares[i].classList.add('b')
+                                tiles[3].classList.add('b')
+                            }
+                        }
+                    }
+                } else {
+                    for (let i = 7; i < squares.length - 7; i++){
+                        if (i % 7 == 5){
+                            squares[i].classList.remove('x')
+                            squares[i].classList.remove('b')
+                            tiles[3].classList.remove('x')
+                            tiles[3].classList.remove('b')
+                        }
+                    }
+                }    
+                  
+            })
+            $(".column5").on('mouseenter mouseleave', function(e) {
+                if (e.type == 'mouseenter') {
+                    for (let i = 7; i < squares.length - 7; i++){
+                        if (displayCurrentPlayer.innerHTML == 'Player 1'){
+                            if (i % 7 == 6  && !squares[i].classList.contains('taken')){
+                                squares[i].classList.add('x')
+                                tiles[4].classList.add('x')
+                            } 
+                        } else {
+                            if (i % 7 == 6  && !squares[i].classList.contains('taken')){
+                                squares[i].classList.add('b')
+                                tiles[4].classList.add('b')
+                            }
+                        }
+                    }
+                } else {
+                    for (let i = 7; i < squares.length - 7; i++){
+                        if (i % 7 == 6){
+                            squares[i].classList.remove('x')
+                            squares[i].classList.remove('b')
+                            tiles[4].classList.remove('x')
+                            tiles[4].classList.remove('b')
+                        }
+                    }
+                }    
+                  
+            })
+            $(".column6").on('mouseenter mouseleave', function(e) {
+                if (e.type == 'mouseenter') {
+                    for (let i = 8; i < squares.length - 7; i++){
+                        if (displayCurrentPlayer.innerHTML == 'Player 1'){
+                            if (i % 7 == 0  && !squares[i].classList.contains('taken')){
+                                squares[i].classList.add('x')
+                                tiles[5].classList.add('x')
+                            } 
+                        } else {
+                            if (i % 7 == 0  && !squares[i].classList.contains('taken')){
+                                squares[i].classList.add('b')
+                                tiles[5].classList.add('b')
+                            }
+                        }
+                    }
+                } else {
+                    for (let i = 8; i < squares.length - 7; i++){
+                        if (i % 7 == 0){
+                            squares[i].classList.remove('x')
+                            squares[i].classList.remove('b')
+                            tiles[5].classList.remove('x')
+                            tiles[5].classList.remove('b')
+                        }
+                    }
+                }    
+                  
+            })
+            $(".column7").on('mouseenter mouseleave', function(e) {
+                if (e.type == 'mouseenter') {
+                    for (let i = 7; i < squares.length - 7; i++){
+                        if (displayCurrentPlayer.innerHTML == 'Player 1'){
+                            if (i % 7 == 1  && !squares[i].classList.contains('taken')){
+                                squares[i].classList.add('x')
+                                tiles[6].classList.add('x')
+                            } 
+                        } else {
+                            if (i % 7 == 1  && !squares[i].classList.contains('taken')){
+                                squares[i].classList.add('b')
+                                tiles[6].classList.add('b')
+                            }
+                        }
+                    }
+                } else {
+                    for (let i = 7; i < squares.length - 7; i++){
+                        if (i % 7 == 1){
+                            squares[i].classList.remove('x')
+                            squares[i].classList.remove('b')
+                            tiles[6].classList.remove('x')
+                            tiles[6].classList.remove('b')
+                        }
+                    }
+                }    
+                  
+            })
+        })
+    })
+
+        
+    </script>
+</head>
+<body>
+
+<!--        Need to learn some Ajax to finish this portion
+                        (Start Game screen)
+    <form class="start-screen" id="startScreen">
+        <header>Connect Four With The Bois</header>
+        <div class="player-name-container">
+            <div id="player-label1">Select a username:</div>
+            <input type="text" value="player 1" id="player-name1">  
+            <button id="player1-name">Enter</button> 
+        </div>
+        <div class="player-name-container">
+            <label id="player-label2">Select a username:</label>
+            <input type="text" value="player 2">   
+            <button id="player2-name">Submit</button>
+        </div>
+    </form>
+-->
+
+
+    <div class="head-container">
+        <div class="logo"></div>
+        <header>Connect Four With The Bois</header>
+        <ul style="list-style: none;">
+            <li>Connect Four</li>
+            <li>Hop Scotch</li>
+            <li>Chess</li>
+            <li>Tick Tack Toe</li>
+            <li>Category</li>
+        </ul>
+    </div>
+    <h3> The Current Player Is: &nbsp<span id="current-player">Player 1</span></h3>
+    
+    <!-- Four Square Board-->
+    <div class="grid-container">
+        <div class="grid">
+            <div class="container">
+                <div class="animation-row"></div>
+                <div class="animation-row"></div>
+                <div class="animation-row"></div>
+                <div class="animation-row"></div>
+                <div class="animation-row"></div>
+                <div class="animation-row"></div>
+                <div class="animation-row"></div>
+            </div>
+            <div class="border">
+                <div class="cell column1"></div>
+                <div class="cell column2"></div>
+                <div class="cell column3"></div>
+                <div class="cell column4"></div>
+                <div class="cell column5"></div>
+                <div class="cell column6"></div>
+                <div class="cell column7"></div>
+                <div class="cell column1"></div>
+                <div class="cell column2"></div>
+                <div class="cell column3"></div>
+                <div class="cell column4"></div>
+                <div class="cell column5"></div>
+                <div class="cell column6"></div>
+                <div class="cell column7"></div>
+                <div class="cell column1"></div>
+                <div class="cell column2"></div>
+                <div class="cell column3"></div>
+                <div class="cell column4"></div>
+                <div class="cell column5"></div>
+                <div class="cell column6"></div>
+                <div class="cell column7"></div>
+                <div class="cell column1"></div>
+                <div class="cell column2"></div>
+                <div class="cell column3"></div>
+                <div class="cell column4"></div>
+                <div class="cell column5"></div>
+                <div class="cell column6"></div>
+                <div class="cell column7"></div>
+                <div class="cell column1"></div>
+                <div class="cell column2"></div>
+                <div class="cell column3"></div>
+                <div class="cell column4"></div>
+                <div class="cell column5"></div>
+                <div class="cell column6"></div>
+                <div class="cell column7"></div>
+                <div class="cell column1"></div>
+                <div class="cell column2"></div>
+                <div class="cell column3"></div>
+                <div class="cell column4"></div>
+                <div class="cell column5"></div>
+                <div class="cell column6"></div>
+                <div class="cell column7"></div>
+            </div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+        </div>
+    </div>
+    <div class="winning-message" id="winningMessage">
+        <header>Connect Four With The Bois</header>
+        <div data-winning-message-text></div>
+        <button id="restart-button">Restart</button>
+    </div>
+</body>
+
+</html>

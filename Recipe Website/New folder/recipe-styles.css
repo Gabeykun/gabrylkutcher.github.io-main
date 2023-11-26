@@ -1,0 +1,136 @@
+body{
+    padding: 1rem 2rem;
+    font-family: Arial, sans-serif;
+}
+
+#nav {
+    color: blue;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links{
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 100;
+    text-decoration: none;
+    padding: 0px 15px;
+    margin: 10px;
+    font-family: monospace;
+}
+
+.center {
+    width: 90vw;
+    max-width: var(--max-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.contacts {
+    background-color: aquamarine;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin: 10px;
+    padding: 4px;
+    font-family: monospace;
+}
+
+.food-directions{
+    padding-top: 2%;
+}
+
+.list {
+    width: 11rem;
+    float: left;
+}
+
+.list ul{
+    padding-left: 0;
+    width: 10rem;
+}
+
+.list ul p {
+    text-align: center;
+}
+
+.waffle {
+    background-image: url(https://images.pexels.com/photos/789327/pexels-photo-789327.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-size: cover;
+}
+
+.pasta {
+    background-image: url(https://www.everydayfamilycooking.com/wp-content/uploads/2019/08/summer-pasta-salad-feature-image.jpg);
+    background-size: cover;
+}
+
+.spaghetti {
+    background-image: url(https://www.jennycancook.com/wp-content/uploads/2015/08/quick-easy-spaghetti-meatballs.jpg);
+    background-size: cover;
+}
+
+.cookie {
+    background-image: url(https://handletheheat.com/wp-content/uploads/2020/10/BAKERY-STYLE-CHOCOLATE-CHIP-COOKIES-9-637x637-1-550x550.jpg);
+    background-size: cover;
+}
+
+.image-title {
+    font-size: 1rem;
+    width: 285px;
+    top: 0%;
+}
+
+.list ul a {
+    text-decoration: none;
+}
+
+.list ul li{
+    list-style: none;
+    display:block;
+    border: solid;
+    border-width: 0.3;
+    padding: 1em;
+    width: 8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: #E6E6FA;
+    color: black;
+}
+
+.img {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items: center;
+    grid-gap: 0.5rem;
+}
+
+.img a{
+    border: solid;
+    width: 18rem;
+    height: 10rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header-img {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp3pmEYhJq3rnFI6s3l5vXo-EXCo6rJ-4v2A&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 1em;
+    height: 8rem;
+    border: solid;
+}

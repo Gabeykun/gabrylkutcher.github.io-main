@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/056e185a0e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <h1><span>G</span>abryl.</h1>
+        <ul>
+            <li class="hide"><a href="#head-image">Home</a></li>
+            <li class="hide"><a href="#proj-container">Projects</a></li>
+            <li class="hide"><a href="#about">Contact</a></li>
+        </ul>
+        <i id="bar" class="fa-solid fa-bars"></i>
+        <section id="menu" >
+            <i id='close' class="fa-solid fa-x link"></i>
+            <a class='link' href="#proj-container">Projects</a>
+            <a class='link' href="#about">Contact</a>
+            <a class='link' href="">Resume</a>
+        </section>
+    </nav>
+
+    <div id="head-image">
+        <div class="head-cover">   
+            <div class="name"><b>Gabryl Kutcher</b></div>
+            <div>Welcome to my Portfolio!</div>
+            <div>
+                <a class="resume" href="Resume.pdf" target="_blank"><b>Resume</b></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="desc-box">
+        <div class="desc-title">SOFTWARE ENGINEER</div>
+        <div class="desc">Hello, I'm a software engineer fluent with Javascript, Python, CSS, HTML, and Git. I'm in the process of getting familiar with React and Tailwind. My interest in coding began when i enrolled into Harvard's CS50 12 week course to gain a solid understanding of the fundamentals of programming. Afterwards I went to FreeCodeCamp.com to learn and begin applying HTML, CSS, and Javascript in my current to-date projects, where I completed 300 hours of course material per language. 
+        </div>
+    </div>
+
+    <div id=proj-container>
+        <div class="proj-title"><span>Projects</span></div>
+        <div class="proj-tile">
+
+            <div class="proj">
+                <a href="calculator/calc.html" alt="Calculator" target="_blank"><img class="proj-img" src="images/calc.png" alt="Calculator Image"></a>
+                <p class="img-title"><b>Calculator</b></p>
+                <div>- HTML, CSS, Javascript <br><br> Project when starting Javascript to get more experience with object-oriented programming. Functions as a regular k-12 calculator with a modern design. <br><br> <a href="https://github.com/Gabeykun/calculator" alt="Eccomerce Link" target="_blank">Click to View Code</a></div>
+            </div>
+
+
+            <div class="proj">
+                <a href="connect four/connect-four.html" alt="Connect 4 Project" target="_blank"><img class="proj-img" src="images/connect.png" alt="Connect 4 Image"></a>
+                <p class="img-title"><b>Connect 4</b></p>
+                <div>- HTML, CSS, Javascript <br><br> This project helped learn and understand more about Dom manipulation and multiple user inputs. Plays the class game enjoyed by friends and displays the winner once someone has connected 4 tiles <br><br> <a href="https://github.com/Gabeykun/connect-4" alt="Eccomerce Link" target="_blank">Click to View Code</a></div>
+            </div>
+
+            <div class="proj">
+                <a href="eccomerce/index.html" alt="Rock Climbing Eccommerce" target="_blank"><img class="proj-img" src="images/Eccomerce.png" alt="Calculator Image"></a>
+                <p class="img-title"><b>Rock Climbing Eccommerce</b></p>
+               <div>- HTML, CSS, Javascript <br><br> Eccomerce Website based around rock climbing with a modern UX/UI design, Semantic HTML, a functional shopping cart and it's fully responsive. <br><br> <a href="https://github.com/Gabeykun/Eccomerce" alt="Eccomerce Link" target="_blank">Click to View Code</a></div>
+            </div>
+        </div>
+    </div>
+
+    <section id="sidebar"></section>
+
+    <div class="interests">
+        <div class="interest-title">INTERESTS</div>
+        <ul>
+            <li>Computer Science</li>
+            <li>Poker</li>
+            <li>Rock Climbing</li>
+        </ul>
+    </div>
+
+    <div id="about">
+        <div class="about-desc">Thank you for looking at my portfolio and hopefully you consider me for a position, my contacts are below and I can't wait to help with your next project.</div>
+        <div class="about-title"><span>Get In Touch</span></div>
+        <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="6" placeholder="Your Message"></textarea> 
+            <br>
+            <button class="btn">Submit</button>
+        </form>
+        <span class="sub-message"></span>
+        <ul class="contact">
+            <li class="envelope"><span><i class="fa-regular fa-envelope"></i></span></li>
+            <li class="phone"><span class="mobile-phone"><i class="fa-solid fa-mobile-screen-button"></i></span></li>
+            <li class="git-hub"><a href="https://github.com/Gabeykun?tab=repositories"><span><i class="fa-brands fa-github"></i></span></a></li>
+        </ul>
+
+        <div class="copywrite">
+            <p>Copywrite @ Gabryl. 
+        </div>
+    </div>
+
+    <script src="port-index.js" async></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw0sxGzPnpPZ1Aegl7o3DizSOwfpp2607N_FwTCDMCYCaskh8z76VkF8TBzzvVTJQMK/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.querySelector('.sub-message')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },4000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
+

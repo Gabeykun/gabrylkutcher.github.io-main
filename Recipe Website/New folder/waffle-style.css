@@ -1,0 +1,167 @@
+body{
+    background-color: #97E8CA;
+}
+
+#nav {
+    display: block;
+    border: solid;
+    color: white;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.links {
+    margin: 15px 0px 15px 0px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.links a{   
+    padding: 5px 15px; 
+}
+
+
+#nav a{
+    color: black;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.image0 {
+    width: 380px;
+    height: 380px;
+    border: solid;
+    border-radius: 10%;
+    float: left;
+    background-image: url(https://images.pexels.com/photos/789327/pexels-photo-789327.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-size: cover;
+    margin-top: 20px;
+}
+
+.image1 {
+    width: 380px;
+    border: solid;
+    border-radius: 10%;
+    height: 380px;
+    float: left;
+    background-image: url(https://www.eatthis.com/wp-content/uploads/sites/4/2020/01/how-to-make-an-omelet-6.jpg?quality=82&strip=1&w=640);
+    background-size: cover;
+    margin-top: 20px;
+}
+
+.image3 {
+    width: 380px;
+    border: solid;
+    border-radius: 10%;
+    height: 380px;
+    float: left;
+    background-image: url(https://www.everydayfamilycooking.com/wp-content/uploads/2019/08/summer-pasta-salad-feature-image.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+}
+
+.image4 {
+    width: 380px;
+    border: solid;
+    border-radius: 10%;
+    height: 380px;
+    float: left;
+    background-image: url(https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_596,h_335/v1/img/recipes/24/39/65/picIDMFir.jpg);
+    background-size: cover;
+    margin-top: 20px;
+}
+
+.image5 {
+    width: 380px;
+    border: solid;
+    border-radius: 10%;
+    height: 380px;
+    float: left;
+    background-image: url(https://hips.hearstapps.com/del.h-cdn.co/assets/17/39/1600x2399/gallery-1506456122-delish-spaghetti-meatballs-2.jpg?resize=768:*);
+    background-size: cover;
+    margin-top: 20px;
+}
+
+.image6 {
+    width: 380px;
+    border: solid;
+    border-radius: 10%;
+    height: 380px;
+    float: left;
+    background-image: url(https://img.buzzfeed.com/thumbnailer-prod-us-east-1/b11bef7b1dd54d55a13b44eda861a3d1/TastyFacebook1080x1080.jpg?output-format=auto&output-quality=auto&resize=600:*);
+    background-size: cover;
+    margin-top: 20px;
+}
+
+.image7 {
+    width: 380px;
+    border: solid;
+    border-radius: 10%;
+    height: 380px;
+    float: left;
+    background-image: url(https://www.ihearteating.com/wp-content/uploads/2016/08/Easiest-Chocolate-Chip-Cookies-800-2.jpg);
+    background-size: cover;
+    background-position: bottom;
+    margin-top: 20px;
+}
+
+.image8 {
+    width: 380px;
+    border: solid;
+    border-radius: 10%;
+    height: 380px;
+    float: left;
+    background-image: url(https://buildyourbite.com/wp-content/uploads/2018/09/Blank-700-x-1450-1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    margin-top: 20px;
+}
+
+.description {
+    margin-left: 400px;
+    padding-left: 20px;
+}
+
+.dsc {
+    margin-bottom: 60px;
+    font-size: 17px;
+}
+
+.dsc1 {
+    margin-bottom: 160px;
+    font-size: 17px;
+}
+
+.dsc2 {
+    margin-bottom: 90px;
+    font-size: 17px;
+}
+
+.instructions {
+    margin-left: 20px;
+}
+
+span {
+    background-color: aquamarine;
+    margin: 5px;
+    border-radius: 10%;
+    border: solid;
+    border-color: aquamarine;
+    font-size: 17px;
+}
+
+li {
+    list-style: none;
+    margin: 5px;
+    font-size: 18px;
+}
+
+header {
+    font-size: 22px;
+    font: bold;
+}
